@@ -1,0 +1,123 @@
+syntax = "proto3";
+
+message Empty {}
+
+message Keyword {
+	string value = 1;
+}
+
+message Product {
+	string itemName = 1;
+	string itemCategory = 2;
+	string itemId = 3;
+	repeated Keyword keywords = 4;
+	string condition = 5;
+	float salePrice = 6;
+	int32 quantity = 7;	
+}
+
+message Products {
+	repeated Product products = 1;
+}
+
+service ProductService {
+	rpc GetProducts(Empty) returns (Products) {}
+	rpc AddProduct(Product) returns (Empty) {}
+	rpc UpdateProducts(Products) returns (Empty) {}
+}
+
+message Seller {
+	string sellerName = 1;
+	string sellerId = 2;
+	int32 sellerLikes = 3;
+	int32 sellerDislikes = 4;
+	int32 itemsSold = 5;
+}
+
+message Sellers {
+	repeated Seller sellers = 1;
+}
+
+service SellerService {
+	rpc GetSellers(Empty) returns (Sellers) {}
+	rpc AddSeller(Seller) returns (Empty) {}
+	rpc UpdateSellers(Sellers) returns (Empty) {}
+}
+
+message Id {
+	string id = 1;
+}
+
+message SellerProduct {
+	string sellerId = 1;
+	repeated Id products = 2;
+}
+
+message SellerProducts {
+	repeated SellerProduct sellerProducts = 1;
+}
+
+service SellerProductsService {
+	rpc GetSellerProducts(Empty) returns (SellerProducts) {}
+	rpc PutSellerProduct(SellerProducts) returns (Empty) {}
+}
+
+message User {
+	string userName = 1;
+	string password = 2;
+	string role = 3;
+	string token = 4;
+	string userId = 5;
+}
+
+message Users {
+	repeated User users = 1;
+}
+
+service UserService {
+	rpc GetUsers(Empty) returns (Users) {}
+	rpc AddUser(User) returns (Empty) {}
+	rpc UpdateUsers(Users) returns (Empty) {}
+}
+
+message Token {
+	string token = 1;
+}
+
+message ActiveTokens {
+	repeated Token tokens = 1;
+}
+
+service TokenService {
+	rpc GetTokens(Empty) returns (ActiveTokens) {}
+	rpc PutTokens(ActiveTokens) returns (Empty) {}
+}
+
+message CartItem {
+	string itemId = 1;
+	string userId = 2;
+	int32 quantity = 3;
+}
+
+message Cart {
+	repeated CartItem cartItems = 1;
+}
+
+service CartService {
+	rpc GetCart(Empty) returns (Cart) {}
+	rpc UpdateCart(Cart) returns (Empty) {}
+}
+
+message BuyerHistory {
+	string buyerId = 1;
+	repeated CartItem cartItems = 2;
+}
+
+message History {
+	repeated BuyerHistory history = 1;
+}
+
+service BuyerHistoryService {
+	rpc UpdateBuyerHistory(BuyerHistory) returns (Empty);
+	rpc GetBuyerHistory(Empty) returns (History);
+}

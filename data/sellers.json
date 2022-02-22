@@ -1,0 +1,23 @@
+[
+	{
+		"sellerName": "Jhonson Electronics",
+		"sellerId": "s_e1",
+		"sellerLikes": 0,
+		"sellerDislikes": 0,
+		"itemsSold": 0
+	},
+	{
+		"sellerName": "Mary Clothing",
+		"sellerId": "s_c1",
+		"sellerLikes": 0,
+		"sellerDislikes": 0,
+		"itemsSold": 0
+	},
+	{
+		"sellerName": "Jane Footwear",
+		"sellerId": "s_f1",
+		"sellerLikes": 0,
+		"sellerDislikes": 0,
+		"itemsSold": 0
+	}
+]

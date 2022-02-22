@@ -1,0 +1,16 @@
+[
+	{
+		"userName": "test_seller",
+		"password": "1234",
+		"role": "seller",
+		"token": null,
+		"userId": "s_e1"
+	},
+	{
+		"userName": "test_buyer",
+		"password": "1234",
+		"role": "buyer",
+		"token": null,
+		"userId": "b1"
+	}
+]

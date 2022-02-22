@@ -1,0 +1,14 @@
+[
+	{
+		"sellerId": "s_e1",
+		"products": [{"id": "e1"}, {"id" : "e2"}]
+	},
+	{
+		"sellerId": "s_f1",
+		"products": [{"id" : "f1"}]
+	},
+	{
+		"sellerId": "s_c1",
+		"products": [{"id" : "c1"}, {"id" : "c2"}]
+	}
+]

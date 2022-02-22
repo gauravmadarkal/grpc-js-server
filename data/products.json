@@ -1,0 +1,47 @@
+[
+	{
+		"itemName": "Socks",
+		"itemCategory": "Clothing",
+		"itemId": "c1",
+		"keywords": [{"value": "footwear"},{"value": "socks"}, {"value": "woolen"}, {"value": "warmth"}],
+		"condition": "new",
+		"salePrice": 9.99,
+		"quantity": 10
+	},
+	{
+		"itemName": "Joggers",
+		"itemCategory": "Clothing",
+		"itemId": "c2",
+		"keywords": [{"value": "pyjamas"}, {"value": "pants"}, {"value": "woolen"}, {"value": "warmth"}],
+		"condition": "new",
+		"salePrice": 15.99,
+		"quantity": 5
+	},
+	{
+		"itemName": "Snow boots",
+		"itemCategory": "Footwear",
+		"itemId": "f1",
+		"keywords": [{"value": "shoes"}, {"value": "boots"}, {"value": "snow"}],
+		"condition": "used",
+		"salePrice": 10.99,
+		"quantity": 2
+	},
+	{
+		"itemName": "Dell Laptop",
+		"itemCategory": "Electronics",
+		"itemId": "e1",
+		"keywords": [{"value": "laptop"}, {"value": "dell"}, {"value": "computer"}, {"value": "pc"}],
+		"condition": "new",
+		"salePrice": 500,
+		"quantity": 6
+	},
+	{
+		"itemName": "iPhone",
+		"itemCategory": "Electronics",
+		"itemId": "e2",
+		"keywords": [{"value": "mobile"}, {"value": "apple"}, {"value": "ios"}, {"value": "cellphone"}],
+		"condition": "used",
+		"salePrice": 300,
+		"quantity": 10
+	}
+]
