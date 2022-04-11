@@ -267,7 +267,7 @@ function getRandomInt(max) {
 }
 
 const getRequestCompletionTime = (req) => {
-	if (req?.req_time) return `${req?.req_time - new Date().getTime()}ms`; else return `${getRandomInt(10)}.${getRandomInt(10)}ms`
+	if (req && req.req_time) return `${req.req_time - new Date().getTime()}ms`; else return `${getRandomInt(10)}.${getRandomInt(10)}ms`
 }
 
 const requestBroadcast = (data, opId, msgType, globalSequenceNo=0) => {
@@ -285,7 +285,7 @@ const requestBroadcast = (data, opId, msgType, globalSequenceNo=0) => {
 		// const [host, port] = replica.split(":");
 		const host = replica.address;
 		const port = replica.dbPort;
-		clientConn?.send(JSON.stringify(msg), port, host, (err, bytes) => {
+		clientConn.send(JSON.stringify(msg), port, host, (err, bytes) => {
 			console.log(`msg sent to ${host}:${port}`);
 		});
 		// }
