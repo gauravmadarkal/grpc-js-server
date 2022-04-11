@@ -1,0 +1,31 @@
+{
+	"product_db": {
+		"8000": { "name": "product_db replica 1", "address": "127.0.0.1", "port": 3000, "dbPort": 8000 },
+		"8001": { "name": "product_db replica 2", "address": "127.0.0.1", "port": 3001, "dbPort": 8001 },
+		"8002": { "name": "product_db replica 3", "address": "127.0.0.1", "port": 3002, "dbPort": 8002 },
+		"8003": { "name": "product_db replica 4", "address": "127.0.0.1", "port": 3003, "dbPort": 8003 },
+		"8004": { "name": "product_db replica 5", "address": "127.0.0.1", "port": 3004, "dbPort": 8004 }
+	},
+	"customer_db": {
+		"7000": { "name": "customer_db replica 1", "address": "127.0.0.1", "port": 4000, "dbPort": 7000 },
+		"7001": { "name": "customer_db replica 2", "address": "127.0.0.1", "port": 4001, "dbPort": 7001 },
+		"7002": { "name": "customer_db replica 3", "address": "127.0.0.1", "port": 4002, "dbPort": 7002 },
+		"7003": { "name": "customer_db replica 4", "address": "127.0.0.1", "port": 4003, "dbPort": 7003 },
+		"7004": { "name": "customer_db replica 5", "address": "127.0.0.1", "port": 4004, "dbPort": 7004 }
+	},
+	"leaderIdentifier": { "address": "127.0.0.1", "port": 7589 },
+	"sssi": {
+		"6000": { "name": "sssi replica 1", "address": "127.0.0.1", "port": 6000 },
+		"6001": { "name": "sssi replica 2", "address": "127.0.0.1", "port": 6001 },
+		"6002": { "name": "sssi replica 3", "address": "127.0.0.1", "port": 6002 },
+		"6003": { "name": "sssi replica 4", "address": "127.0.0.1", "port": 6003 },
+		"6004": { "name": "sssi replica 4", "address": "127.0.0.1", "port": 6003 }
+	},
+	"ssbi": {
+		"5000": { "name": "ssbi replica 1", "address": "127.0.0.1", "port": 5000 },
+		"5001": { "name": "ssbi replica 2", "address": "127.0.0.1", "port": 5001 },
+		"5002": { "name": "ssbi replica 3", "address": "127.0.0.1", "port": 5002 },
+		"5003": { "name": "ssbi replica 4", "address": "127.0.0.1", "port": 5003 },
+		"5004": { "name": "ssbi replica 4", "address": "127.0.0.1", "port": 5003 }
+	}
+}
